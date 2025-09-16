@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatNight - Premium Nightclub Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>BeatNight</h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#events" class="nav-link">Events</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Experience The Night</h1>
+                <p class="hero-subtitle">Premium nightclub events & unforgettable experiences in Bangalore</p>
+                <div class="hero-buttons">
+                    <a href="#events" class="btn btn-primary">View Events</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-video">
+            <!-- Video background placeholder -->
+            <div class="video-placeholder"></div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join us for the hottest nights in Bangalore</p>
+            </div>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="event1.jpg" alt="Electronic Nights">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">DEC</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Electronic Nights</h3>
+                        <p class="event-venue">Club Infinity, Bangalore</p>
+                        <p class="event-time">10:00 PM - 3:00 AM</p>
+                        <div class="event-price">₹1,200</div>
+                        <a href="https://in.bookmyshow.com" target="_blank" class="btn btn-event">Book Tickets</a>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="event2.jpg" alt="House Party">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">DEC</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>House Party Special</h3>
+                        <p class="event-venue">Sky Lounge, MG Road</p>
+                        <p class="event-time">9:00 PM - 2:00 AM</p>
+                        <div class="event-price">₹800</div>
+                        <a href="https://district.events" target="_blank" class="btn btn-event">Book Tickets</a>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="event3.jpg" alt="New Year Bash">
+                        <div class="event-date">
+                            <span class="day">31</span>
+                            <span class="month">DEC</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>New Year Countdown</h3>
+                        <p class="event-venue">Rooftop Seven, Koramangala</p>
+                        <p class="event-time">8:00 PM - 6:00 AM</p>
+                        <div class="event-price">₹2,500</div>
+                        <a href="https://sortmyscene.com" target="_blank" class="btn btn-event">Book Tickets</a>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="event4.jpg" alt="Weekend Vibes">
+                        <div class="event-date">
+                            <span class="day">28</span>
+                            <span class="month">DEC</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Weekend Vibes</h3>
+                        <p class="event-venue">Club Cabana, Whitefield</p>
+                        <p class="event-time">10:00 PM - 3:00 AM</p>
+                        <div class="event-price">₹1,000</div>
+                        <a href="https://skillboxes.com" target="_blank" class="btn btn-event">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Gallery</h2>
+                <p>Memories from our amazing nights</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="2023">2023</button>
+                <button class="filter-btn" data-filter="electronic">Electronic</button>
+                <button class="filter-btn" data-filter="house">House Music</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Gallery Album 1 -->
+                <div class="gallery-album" data-category="electronic 2024">
+                    <div class="album-cover">
+                        <img src="album1.jpg" alt="Electronic Nights - Nov 2024">
+                        <div class="album-overlay">
+                            <h4>Electronic Nights</h4>
+                            <p>November 2024 • 45 Photos</p>
+                            <button class="view-album-btn">View Album</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Album 2 -->
+                <div class="gallery-album" data-category="house 2024">
+                    <div class="album-cover">
+                        <img src="album2.jpg" alt="House Party - Oct 2024">
+                        <div class="album-overlay">
+                            <h4>House Party Special</h4>
+                            <p>October 2024 • 32 Photos</p>
+                            <button class="view-album-btn">View Album</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Album 3 -->
+                <div class="gallery-album" data-category="electronic 2023">
+                    <div class="album-cover">
+                        <img src="album3.jpg" alt="Summer Fest - Aug 2023">
+                        <div class="album-overlay">
+                            <h4>Summer Electronic Fest</h4>
+                            <p>August 2023 • 67 Photos</p>
+                            <button class="view-album-btn">View Album</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Album 4 -->
+                <div class="gallery-album" data-category="house 2023">
+                    <div class="album-cover">
+                        <img src="album4.jpg" alt="Underground House - Dec 2023">
+                        <div class="album-overlay">
+                            <h4>Underground House</h4>
+                            <p>December 2023 • 28 Photos</p>
+                            <button class="view-album-btn">View Album</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>About BeatNight</h2>
+                        <p>Creating unforgettable nightlife experiences since 2011</p>
+                    </div>
+                    <div class="about-description">
+                        <p>For over 13 years, BeatNight has been Bangalore's premier nightclub event promotion company. We curate weekly DJ events and promote the hottest concerts across the city, bringing together music lovers and party enthusiasts.</p>
+                        <p>Our team is passionate about creating memorable experiences that go beyond just music. We partner with top venues, world-class DJs, and premium brands to deliver events that define Bangalore's nightlife scene.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>13+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Events Organized</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="about-team.jpg" alt="BeatNight Team">
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <div class="section-header">
+                    <h3>Meet Our Team</h3>
+                    <p>The minds behind Bangalore's hottest events</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="founder1.jpg" alt="Founder">
+                        </div>
+                        <div class="member-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p class="member-role">Founder & CEO</p>
+                            <p class="member-bio">Music enthusiast with 15+ years in event management</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="founder2.jpg" alt="Co-Founder">
+                        </div>
+                        <div class="member-info">
+                            <h4>Priya Sharma</h4>
+                            <p class="member-role">Co-Founder & Creative Director</p>
+                            <p class="member-bio">Creative visionary behind our event experiences</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="manager.jpg" alt="Operations Manager">
+                        </div>
+                        <div class="member-info">
+                            <h4>Arjun Mehta</h4>
+                            <p class="member-role">Operations Manager</p>
+                            <p class="member-bio">Ensures flawless execution of every event</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to party? Contact us for bookings and partnerships</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Brigade Road<br>Bangalore, Karnataka 560025</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@beatnight.in</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Social Media</h4>
+                            <p>@beatnight_blr</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="subject">
+                                <option value="">Select Subject</option>
+                                <option value="booking">Event Booking</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BeatNight</h3>
+                    <p>Bangalore's premier nightclub event promotion company, creating unforgettable experiences since 2011.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Event Promotion</a></li>
+                        <li><a href="#">DJ Bookings</a></li>
+                        <li><a href="#">Venue Partnerships</a></li>
+                        <li><a href="#">Private Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@beatnight.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Brigade Road, Bangalore</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BeatNight. All rights reserved. | Designed for WordPress</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
